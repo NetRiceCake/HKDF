@@ -3,6 +3,7 @@
 HKDF is a simple key derivation function (KDF) based on a Hmac
 
 [![Version](https://img.shields.io/badge/Version-1.1-blue.svg)](https://github.com/NetRiceCake/HKDF/)
+[![Version](https://img.shields.io/badge/License-Public%20domain-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 ### Using in Gradle :
 ```
