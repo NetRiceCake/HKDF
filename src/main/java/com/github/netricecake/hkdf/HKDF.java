@@ -61,11 +61,11 @@ public class HKDF {
         return buffer.array();
     }
 
-    public byte[] expandLabel(byte[] key, String label, byte[] context, short length) throws NoSuchAlgorithmException, InvalidKeyException {
+    public byte[] expandLabel(byte[] key, String label, byte[] context, int length) throws NoSuchAlgorithmException, InvalidKeyException {
         return expandLabel(new SecretKeySpec(key, algorithm), label, context, length);
     }
 
-    public byte[] expandLabel(SecretKey key, String label, byte[] context, short length) throws NoSuchAlgorithmException, InvalidKeyException {
+    public byte[] expandLabel(SecretKey key, String label, byte[] context, int length) throws NoSuchAlgorithmException, InvalidKeyException {
         byte[] hexLabel = ("tls13 " + label).getBytes();
         byte[] info = new byte[hexLabel.length + context.length + 4];
 
